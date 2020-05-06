@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//hecho por kevin flores
+//creado por kevin flores
 
 public class caso14 {
 

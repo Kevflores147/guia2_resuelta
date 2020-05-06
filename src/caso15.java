@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class caso15 {
-
+	//creado por kevin flores
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
