@@ -10,6 +10,7 @@ public class caso12 {
 		double sueldo,nsueldo;
 		int nivel;
 		
+		
 		System.out.println("Nombre del empleado: ");
 		empleado = sc.nextLine();
 		

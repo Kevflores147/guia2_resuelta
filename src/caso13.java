@@ -6,8 +6,9 @@ public class caso13 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
-		float n1,n2,op;
-		int numerodia;
+		float n1,n2,op = 0;
+		int numerodia= 0;
+		String operacion = "";
 		
 		System.out.println("Ingrese el primer numero: ");
 		n1 = sc.nextFloat();
@@ -20,11 +21,55 @@ public class caso13 {
 		
 		switch (numerodia) {
 		case 1:
+			operacion = "Suma";
 			op= (float)(n1 + n2);
 			break;
-
-
-	}
+		case 2:
+			operacion = "Resta";
+			op= (float)(n1 - n2);
+			break;
+		case 3:
+			operacion = "Multiplicacion";
+			op= (float)(n1*n2);
+			break;
+		case 4:
+			
+			if(n2>=1) {
+				operacion = "Division";
+				op= (float)(n1/n2);
+				}
+				else {
+				operacion = "No es posible dividir";		
+				}
+				break;
+		case 5:
+			
+			if(n2>=1) {
+				operacion = "Resto entero";
+				op= (float)(n1%n2);
+				}
+				else {
+				operacion = "No es posible hallar el resto entero";
+				}
+				break;
+		case 6:
+			operacion = "Promedio";
+			op=(float)(n1+n2)/2;
+			break;
+			
+		default:
+				System.out.println("Coloque un numero en el rango");
+				op = 0;
+			
+			}
+		System.out.println("---Resultados---");
+		System.out.println("Numero 1: "+n1);
+		System.out.println("Numero 2: "+n2);
+		System.out.println("Operacion: "+operacion);
+		System.out.println("Resultado: "+op);
+		
+		
+		
 	}
 
 }
